@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cEj4m7GW8EU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ds02\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.16\\microsoft.aspnetcore.openapi.9.0.16.nupkg.sha512",
+    "C:\\Users\\ds02\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
