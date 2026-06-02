@@ -153,3 +153,5 @@ C:\Users\ds02\Documents\GitHub\FloraBackend\FLORA\obj\Debug\net9.0\refint\Flora.
 C:\Users\ds02\Documents\GitHub\FloraBackend\FLORA\obj\Debug\net9.0\Flora.pdb
 C:\Users\ds02\Documents\GitHub\FloraBackend\FLORA\obj\Debug\net9.0\Flora.genruntimeconfig.cache
 C:\Users\ds02\Documents\GitHub\FloraBackend\FLORA\obj\Debug\net9.0\ref\Flora.dll
+C:\Users\ds02\Documents\GitHub\FloraBackend\Flora\bin\Debug\net9.0\MySqlConnector.dll
+C:\Users\ds02\Documents\GitHub\FloraBackend\Flora\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
