@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj": {}
+    "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\FLORA\\Flora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj": {
+    "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\FLORA\\Flora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
+        "projectUniqueName": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\FLORA\\Flora.csproj",
         "projectName": "Flora",
-        "projectPath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
+        "projectPath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\FLORA\\Flora.csproj",
         "packagesPath": "C:\\Users\\ds02\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\obj\\",
+        "outputPath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\FLORA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ds02\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -46,7 +46,21 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[9.0.16, )"
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
