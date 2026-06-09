@@ -13,5 +13,6 @@ namespace Flora.Repository
         public DbSet<Usuario_flora> Usuarios { get; set; }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<MinhasCompras> MinhasCompras { get; set; }
+        public DbSet<Itens> Itens { get; set; }
     }
 }

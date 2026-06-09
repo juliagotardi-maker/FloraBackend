@@ -11,6 +11,9 @@ namespace Flora.Models
         public int id_minhas_compras { get; set; }
 
         [Column("id_usuario")]
+        public Usuario_flora Usuario { get; set; }
+
+        [Column("id_usuario")]
         public int id_usuario { get; set; }
 
         [Column("valor")]
