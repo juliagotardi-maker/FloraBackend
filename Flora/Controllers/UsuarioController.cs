@@ -35,6 +35,25 @@ namespace Flora.Controllers
         {
             return await _context.Usuarios.ToListAsync();
         }
+
+        [HttpPost("login")]
+        public async Task<ActionResult> Login(Usuario_flora usuarioLogin)
+        {
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(u =>
+                    u.email == usuarioLogin.email &&
+                    u.senha == usuarioLogin.senha);
+
+            if (usuario == null)
+            {
+                return Unauthorized("Email ou senha inválidos.");
+            }
+
+            return Ok(new
+            {
+                mensagem = "Login realizado com sucesso!",
+                nome = usuario.nome
+            });
+        }
     }
-    
 }

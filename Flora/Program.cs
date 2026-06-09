@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
 
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/openapi/v1.json", "Minha API Copa do Mundo");
+        options.SwaggerEndpoint("/openapi/v1.json", "Flora API v1");
     });
 }
 
