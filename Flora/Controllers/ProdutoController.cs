@@ -21,7 +21,6 @@ namespace Flora.Controllers
         {
             _context.Produtos.Add(produto);
             await _context.SaveChangesAsync();
-
             return Ok(produto);
         }
 
@@ -31,11 +30,11 @@ namespace Flora.Controllers
             return await _context.Produtos.ToListAsync();
         }
 
-        [HttpGet("nome/{nome}")]
-        public async Task<ActionResult<Produto>> BuscarPorNome(string nome)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Produto>> BuscarPorId(int id)
         {
             var produto = await _context.Produtos
-                .FirstOrDefaultAsync(p => p.nome.ToLower() == nome.ToLower());
+                .FirstOrDefaultAsync(p => p.id_produto == id);
 
             if (produto == null)
                 return NotFound("Produto não encontrado.");
@@ -43,11 +42,11 @@ namespace Flora.Controllers
             return Ok(produto);
         }
 
-        [HttpPut("nome/{nome}")]
-        public async Task<ActionResult> Atualizar(string nome, Produto produto)
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Atualizar(int id, Produto produto)
         {
             var produtoExistente = await _context.Produtos
-                .FirstOrDefaultAsync(p => p.nome.ToLower() == nome.ToLower());
+                .FirstOrDefaultAsync(p => p.id_produto == id);
 
             if (produtoExistente == null)
                 return NotFound("Produto não encontrado.");
@@ -62,11 +61,11 @@ namespace Flora.Controllers
             return Ok(produtoExistente);
         }
 
-        [HttpDelete("nome/{nome}")]
-        public async Task<ActionResult> Excluir(string nome)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Excluir(int id)
         {
             var produto = await _context.Produtos
-                .FirstOrDefaultAsync(p => p.nome.ToLower() == nome.ToLower());
+                .FirstOrDefaultAsync(p => p.id_produto == id);
 
             if (produto == null)
                 return NotFound("Produto não encontrado.");
