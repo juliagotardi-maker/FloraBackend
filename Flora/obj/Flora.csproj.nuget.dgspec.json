@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj": {}
+    "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj": {
+    "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
+        "projectUniqueName": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
         "projectName": "Flora",
-        "projectPath": "c:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
+        "projectPath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\Flora.csproj",
         "packagesPath": "C:\\Users\\ds02\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\obj\\",
+        "outputPath": "C:\\Users\\ds02\\Documents\\GitHub\\FloraBackend\\Flora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ds02\\AppData\\Roaming\\NuGet\\NuGet.Config"
