@@ -30,11 +30,11 @@ namespace Flora.Controllers
             return await _context.Produtos.ToListAsync();
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Produto>> BuscarPorId(int id)
+        [HttpGet("nome/{nome}")]
+        public async Task<ActionResult<Produto>> BuscarPorNome(string nome)
         {
             var produto = await _context.Produtos
-                .FirstOrDefaultAsync(p => p.id_produto == id);
+                .FirstOrDefaultAsync(p => p.nome.ToLower() == nome.ToLower());
 
             if (produto == null)
                 return NotFound("Produto não encontrado.");
@@ -42,11 +42,11 @@ namespace Flora.Controllers
             return Ok(produto);
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult> Atualizar(int id, Produto produto)
+        [HttpPut("nome/{nome}")]
+        public async Task<ActionResult> Atualizar(string nome, Produto produto)
         {
             var produtoExistente = await _context.Produtos
-                .FirstOrDefaultAsync(p => p.id_produto == id);
+                .FirstOrDefaultAsync(p => p.nome.ToLower() == nome.ToLower());
 
             if (produtoExistente == null)
                 return NotFound("Produto não encontrado.");
@@ -61,11 +61,11 @@ namespace Flora.Controllers
             return Ok(produtoExistente);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<ActionResult> Excluir(int id)
+        [HttpDelete("nome/{nome}")]
+        public async Task<ActionResult> Excluir(string nome)
         {
             var produto = await _context.Produtos
-                .FirstOrDefaultAsync(p => p.id_produto == id);
+                .FirstOrDefaultAsync(p => p.nome.ToLower() == nome.ToLower());
 
             if (produto == null)
                 return NotFound("Produto não encontrado.");
